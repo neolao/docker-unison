@@ -38,7 +38,7 @@ mywebserver:
   volumes_from:  
     - unison  
 unison:  
-  image: leighmcculloch/unison  
+  image: neolao/unison  
   environment:  
     - UNISON_VERSION=2.48.3
     - UNISON_VOLUME=/unison
