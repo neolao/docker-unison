@@ -40,7 +40,8 @@ mywebserver:
 unison:  
   image: leighmcculloch/unison  
   environment:  
-    - UNISON_VERSION=2.48.3  
+    - UNISON_VERSION=2.48.3
+    - UNISON_VOLUME=/unison
   ports:  
     - "5000:5000"
 ```
