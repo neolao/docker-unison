@@ -1,9 +1,9 @@
 #!/bin/sh
 export HOME=/root
 
-if [ ! -f "$UNISON_VOLUME" ]
+if [ ! -e "$UNISON_VOLUME" ]
 then
-    ln -s /unison $UNISON_VOLUME
+    mkdir $UNISON_VOLUME
 fi
 
 cd $UNISON_VOLUME || exit
